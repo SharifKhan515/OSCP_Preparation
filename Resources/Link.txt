@@ -1,0 +1,12 @@
+Importatnt link for OSCP preparation:
+Tribune article: https://medium.com/@Tib3rius/59-hosts-to-glory-passing-the-oscp-acf0fd384371
+Blacksheep articls: https://forum.hackthebox.eu/discussion/1730/a-script-kiddie-s-guide-to-passing-oscp-on-your-first-attempt
+Tjnulls: https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html
+Ramkishan Newbee guid:https://niiconsulting.com/checkmate/2017/06/a-detail-guide-on-oscp-preparation-from-newbie-to-oscp/
+Glodburge articl: https://medium.com/@galolbardes/passing-the-oscp-while-working-full-time-29cb22d622e0
+
+Rowbot's Pentest note: https://guide.offsecnewbie.com/general-methodology
+OSCP survival guide:https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md
+Total OSCP guid: https://sushant747.gitbooks.io/total-oscp-guide/content/basics_of_windows.html
+How top prepare for OSCP: https://www.cbtnuggets.com/blog/career/career-progression/how-to-prepare-for-the-oscp 
+Genral methodology of OSCP: https://guide.offsecnewbie.com/general-methodology
