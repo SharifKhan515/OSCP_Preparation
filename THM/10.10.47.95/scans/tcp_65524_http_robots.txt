@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Tue, 11 Aug 2020 16:52:19 GMT
+Server: Apache/2.4.43 (Ubuntu)
+Last-Modified: Mon, 15 Jun 2020 07:25:46 GMT
+ETag: "99-5a81a55dd360b"
+Accept-Ranges: bytes
+Content-Length: 153
+Vary: Accept-Encoding
+Content-Type: text/plain
+
+User-Agent:*
+Disallow:/
+Robots Not Allowed
+User-Agent:a18672860d0510e5ab6699730763b250
+Allow:/
+This Flag Can Enter But Only This Flag No More Exceptions

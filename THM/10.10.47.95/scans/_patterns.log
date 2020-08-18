@@ -1,0 +1,6 @@
+tcp/80/nmap-http - Identified HTTP Server: nginx/1.16.1
+
+tcp/80/nmap-http - Nmap script found a potential vulnerability. (State: VULNERABLE)
+
+tcp/65524/nmap-http - Identified HTTP Server: Apache/2.4.43 (Ubuntu)
+

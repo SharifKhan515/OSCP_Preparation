@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Tue, 11 Aug 2020 15:54:51 GMT
+Content-Type: text/plain
+Content-Length: 43
+Last-Modified: Mon, 15 Jun 2020 00:27:05 GMT
+Connection: keep-alive
+ETag: "5ee6c059-2b"
+Accept-Ranges: bytes
+
+User-Agent:*
+Disallow:/
+Robots Not Allowed

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Aug 11 21:54:43 2020 as: nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/tcp_80_http_nmap.txt -oX /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/xml/tcp_80_http_nmap.xml 10.10.47.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/tcp_80_http_nmap.txt -oX /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/xml/tcp_80_http_nmap.xml 10.10.47.95" start="1597161283" startstr="Tue Aug 11 21:54:43 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597161283"/>
+<taskend task="NSE" time="1597161283"/>
+<taskbegin task="NSE" time="1597161283"/>
+<taskend task="NSE" time="1597161283"/>
+<taskbegin task="NSE" time="1597161283"/>
+<taskend task="NSE" time="1597161283"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597161283"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597161283"/>
+<taskbegin task="SYN Stealth Scan" time="1597161283"/>
+<taskend task="SYN Stealth Scan" time="1597161284" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1597161284"/>
+<taskend task="Service scan" time="1597161291" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1597161291"/>
+<taskprogress task="NSE" time="1597161322" percent="98.69" remaining="1" etc="1597161322"/>
+<taskprogress task="NSE" time="1597161352" percent="99.35" remaining="1" etc="1597161352"/>
+<taskprogress task="NSE" time="1597161382" percent="99.67" remaining="1" etc="1597161382"/>
+<taskprogress task="NSE" time="1597161412" percent="99.67" remaining="1" etc="1597161412"/>
+<taskprogress task="NSE" time="1597161442" percent="99.67" remaining="1" etc="1597161442"/>
+<taskprogress task="NSE" time="1597161472" percent="99.67" remaining="1" etc="1597161473"/>
+<taskprogress task="NSE" time="1597161502" percent="99.67" remaining="1" etc="1597161503"/>
+<taskprogress task="NSE" time="1597161532" percent="99.67" remaining="1" etc="1597161533"/>
+<taskprogress task="NSE" time="1597161562" percent="99.67" remaining="1" etc="1597161563"/>
+<taskprogress task="NSE" time="1597161592" percent="99.67" remaining="1" etc="1597161593"/>
+<taskprogress task="NSE" time="1597161622" percent="99.67" remaining="2" etc="1597161623"/>
+<taskprogress task="NSE" time="1597161652" percent="99.67" remaining="2" etc="1597161653"/>
+<taskprogress task="NSE" time="1597161682" percent="99.67" remaining="2" etc="1597161683"/>
+<taskprogress task="NSE" time="1597161712" percent="99.67" remaining="2" etc="1597161713"/>
+<taskprogress task="NSE" time="1597161742" percent="99.67" remaining="2" etc="1597161743"/>
+<taskprogress task="NSE" time="1597161772" percent="99.67" remaining="2" etc="1597161774"/>
+<taskprogress task="NSE" time="1597161802" percent="99.67" remaining="2" etc="1597161804"/>
+<taskprogress task="NSE" time="1597161832" percent="99.67" remaining="2" etc="1597161834"/>
+<taskprogress task="NSE" time="1597161862" percent="99.67" remaining="2" etc="1597161864"/>
+<taskprogress task="NSE" time="1597161892" percent="99.67" remaining="2" etc="1597161894"/>
+<taskprogress task="NSE" time="1597161922" percent="99.67" remaining="3" etc="1597161924"/>
+<taskprogress task="NSE" time="1597161952" percent="99.67" remaining="3" etc="1597161954"/>
+<taskprogress task="NSE" time="1597161982" percent="99.67" remaining="3" etc="1597161984"/>
+<taskprogress task="NSE" time="1597162012" percent="99.67" remaining="3" etc="1597162014"/>
+<taskprogress task="NSE" time="1597162042" percent="99.67" remaining="3" etc="1597162044"/>
+<taskend task="NSE" time="1597162066"/>
+<taskbegin task="NSE" time="1597162066"/>
+<taskend task="NSE" time="1597162067"/>
+<taskbegin task="NSE" time="1597162067"/>
+<taskend task="NSE" time="1597162067"/>
+<host starttime="1597161283" endtime="1597162067"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.47.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.16.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service><script id="http-chrono" output="Request times for /; avg: 660.65ms; min: 504.59ms; max: 1122.78ms"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Tue, 11 Aug 2020 15:55:07 GMT; +8s from local time."><elem key="date">2020-08-11T15:55:07+00:00</elem>
+<elem key="delta">8.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;  /hidden/: Potentially interesting folder&#xa;"/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Server: nginx/1.16.1&#xa;  Date: Tue, 11 Aug 2020 15:55:06 GMT&#xa;  Content-Type: text/html&#xa;  Content-Length: 612&#xa;  Last-Modified: Mon, 15 Jun 2020 00:02:19 GMT&#xa;  Connection: close&#xa;  ETag: &quot;5ee6ba8b-264&quot;&#xa;  Accept-Ranges: bytes&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash e3eb0a1df437f3f97a64aca5952c8ea0&#xa;Credits query returned unknown hash e3eb0a1df437f3f97a64aca5952c8ea0"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="nginx/1.16.1"><elem>nginx/1.16.1</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;125 names had status 200&#xa;cdn&#xa;mail3"/><script id="http-vuln-cve2011-3192" output="&#xa;  VULNERABLE:&#xa;  Apache byterange filter DoS&#xa;    State: VULNERABLE&#xa;    IDs:  BID:49303  CVE:CVE-2011-3192&#xa;      The Apache web server is vulnerable to a denial of service attack when numerous&#xa;      overlapping byte ranges are requested.&#xa;    Disclosure date: 2011-08-19&#xa;    References:&#xa;      https://www.tenable.com/plugins/nessus/55976&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192&#xa;      https://seclists.org/fulldisclosure/2011/Aug/175&#xa;      https://www.securityfocus.com/bid/49303&#xa;"><table key="CVE-2011-3192">
+<elem key="title">Apache byterange filter DoS</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>BID:49303</elem>
+<elem>CVE:CVE-2011-3192</elem>
+</table>
+<table key="description">
+<elem>The Apache web server is vulnerable to a denial of service attack when numerous&#xa;overlapping byte ranges are requested.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2011</elem>
+<elem key="month">08</elem>
+<elem key="day">19</elem>
+</table>
+</table>
+<elem key="disclosure">2011-08-19</elem>
+<table key="refs">
+<elem>https://www.tenable.com/plugins/nessus/55976</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192</elem>
+<elem>https://seclists.org/fulldisclosure/2011/Aug/175</elem>
+<elem>https://www.securityfocus.com/bid/49303</elem>
+</table>
+</table>
+</script><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/></port>
+</ports>
+<times srtt="213772" rttvar="213772" to="1068860"/>
+</host>
+<taskbegin task="NSE" time="1597162067"/>
+<taskend task="NSE" time="1597162067"/>
+<taskbegin task="NSE" time="1597162067"/>
+<taskend task="NSE" time="1597162067"/>
+<taskbegin task="NSE" time="1597162067"/>
+<taskend task="NSE" time="1597162067"/>
+<runstats><finished time="1597162067" timestr="Tue Aug 11 22:07:47 2020" elapsed="784.37" summary="Nmap done at Tue Aug 11 22:07:47 2020; 1 IP address (1 host up) scanned in 784.37 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,146 @@
+HTTP/1.1 404 Not Found
+Host: 10.10.229.55:8000
+Date: Sun, 16 Aug 2020 14:31:07 GMT
+Connection: close
+X-Powered-By: PHP/7.2.32-1+ubuntu18.04.1+deb.sury.org+1
+Cache-Control: no-cache
+Date: Sun, 16 Aug 2020 14:31:07 GMT
+Content-Type: text/html; charset=UTF-8
+X-Debug-Token: 4c73b1
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Bolt | A hero is unleashed</title>
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Roboto:400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" href="/theme/base-2018/css/bulma.css?8ca0842ebb">
+        <link rel="stylesheet" href="/theme/base-2018/css/theme.css?6cb66bfe9f">
+    	<meta name="generator" content="Bolt">
+    </head>
+    <body>
+        <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+
+        
+            <header role="banner" class="header">
+            <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <span class="navbar-item">
+                Bolt
+            </span>
+            <span class="navbar-burger" data-target="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div class="navbar-menu" id="navbar-toggle">
+            <div class="navbar-start">
+                
+    
+
+
+                    <a href="/" title='This is the first menu item.' class='navbar-item  first'>Home</a>
+                        <div class="navbar-item
+         has-dropdown is-hoverable"><a href="/entry/message-from-admin" title='' class='navbar-link '>Second item</a><div class="navbar-dropdown"><a href="/entry/message-for-it-department" title='' class='navbar-item  '>Sub 1</a><a href="/entry/3" title='' class='navbar-item  menu-item-class'>Sub 2</a><a href="/entry/4" title='' class='navbar-item  '>Sub 3</a><a href="/page/3" title='' class='navbar-item  sub-class'>Sub 4</a></div></div>
+                        <a href="/pages" title='' class='navbar-item  '>All pages</a>
+                        <a href="http://bolt.cm" title='' class='navbar-item  last'>The Bolt site</a>
+    
+            </div>
+            <div class="navbar-end">
+                <form class="field has-addons" method="get" action="/search" enctype="text/plain">
+                    <label class="label is-hidden" for="search">Search</label>
+                    <div class="control">
+                        <input class="input" type="search" value="" placeholder="Search …" name="search" id="search">
+                    </div>
+                    <div class="control">
+                        <button class="button is-black" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+            <section class="hero hero-image is-primary is-bold is-medium ">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Bolt</h1>
+                        <h2 class="subtitle">A hero is unleashed</h2>
+                    </div>
+    </div>
+</section>
+
+            </header>
+
+            
+
+            <a id="main-content"></a>
+            
+<section class="section section-not-found">
+    <div class="container">
+        <div class="content">
+                            <h1 class="title">404 not found</h1>
+                <p>
+                    The requested page was not found.
+                </p>
+
+                <div class="notification is-warning">
+                                        Add a Blocks record with slug '404-not-found' to customize this message.
+                    If it's not showing up here, doublecheck that the <tt>slug</tt> is correct, and that the Block is published.
+                </div>
+                    </div>
+
+        <form class="field has-addons" method="get" action="/search" enctype="text/plain">
+            <label class="label is-hidden" for="search-box">Search</label>
+            <div class="control">
+                <input class="input" type="search" value="" placeholder="Search …" name="search" id="search-box">
+            </div>
+            <div class="control">
+                <button class="button is-primary" type="submit">Search</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+            
+
+        
+        <footer role="contentinfo" class="footer">
+    <div class="container">
+        <nav class="level" role="navigation" aria-label="footer navigation">
+            <div class="level-left">
+                <div class="level-item">
+                    <p>
+                        &copy; 2020 &bullet;
+                        This website is <a href='https://bolt.cm' target='_blank' title='Sophisticated, lightweight & simple CMS'>Built with Bolt</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="level-right">
+                
+
+
+
+                    <p class="level-item"><a href="/" title='This is the first menu item.' class='first'>Home</a></p>
+                        <p class="level-item"><a href="/entry/message-from-admin" title='' class=''>Second item</a></p>
+                        <p class="level-item"><a href="/pages" title='' class=''>All pages</a></p>
+                        <p class="level-item"><a href="http://bolt.cm" title='' class='last'>The Bolt site</a></p>
+    
+            </div>
+        </nav>
+        
+    </div>
+</footer>
+
+<script src="/theme/base-2018/js/normalizeBrightness.js?0be4044459"></script>
+<script src="/theme/base-2018/js/app.js?d2af79273f"></script>
+
+
+    </body>
+</html>
+
+

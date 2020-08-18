@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Tue Aug 11 21:53:25 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/_quick_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/THM/10.10.47.95/scans/xml/_quick_tcp_nmap.xml 10.10.47.95
+Nmap scan report for 10.10.47.95
+Host is up, received user-set (0.21s latency).
+Scanned at 2020-08-11 21:53:26 +06 for 77s
+Not shown: 999 closed ports
+Reason: 999 resets
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 63 nginx 1.16.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: nginx/1.16.1
+|_http-title: Welcome to nginx!
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 11 21:54:43 2020 -- 1 IP address (1 host up) scanned in 77.52 seconds
