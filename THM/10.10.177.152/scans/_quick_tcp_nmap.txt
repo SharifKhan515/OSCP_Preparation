@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Sun Oct  4 23:05:11 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/khan/OSCP_Preparation/THM/10.10.177.152/scans/_quick_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/THM/10.10.177.152/scans/xml/_quick_tcp_nmap.xml 10.10.177.152
+Increasing send delay for 10.10.177.152 from 0 to 5 due to 11 out of 16 dropped probes since last increase.
+Nmap scan report for 10.10.177.152
+Host is up, received user-set (0.22s latency).
+Scanned at 2020-10-04 23:05:11 +06 for 78s
+Not shown: 999 closed ports
+Reason: 999 resets
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  4 23:06:29 2020 -- 1 IP address (1 host up) scanned in 78.62 seconds

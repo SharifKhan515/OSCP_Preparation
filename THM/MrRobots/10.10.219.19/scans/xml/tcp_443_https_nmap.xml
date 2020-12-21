@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Oct 11 20:41:25 2020 as: nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/THM/MrRobots/10.10.219.19/scans/tcp_443_http_nmap.txt -oX /home/khan/OSCP_Preparation/THM/MrRobots/10.10.219.19/scans/xml/tcp_443_https_nmap.xml 10.10.219.19 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/THM/MrRobots/10.10.219.19/scans/tcp_443_http_nmap.txt -oX /home/khan/OSCP_Preparation/THM/MrRobots/10.10.219.19/scans/xml/tcp_443_https_nmap.xml 10.10.219.19" start="1602427285" startstr="Sun Oct 11 20:41:25 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1602427285"/>
+<taskend task="NSE" time="1602427285"/>
+<taskbegin task="NSE" time="1602427285"/>
+<taskend task="NSE" time="1602427285"/>
+<taskbegin task="NSE" time="1602427285"/>
+<taskend task="NSE" time="1602427285"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1602427285"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1602427285"/>
+<taskbegin task="SYN Stealth Scan" time="1602427285"/>
+<taskend task="SYN Stealth Scan" time="1602427285" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1602427285"/>
+<taskend task="Service scan" time="1602427300" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1602427300"/>
+<taskprogress task="NSE" time="1602427331" percent="81.00" remaining="8" etc="1602427338"/>
+<taskprogress task="NSE" time="1602427361" percent="87.17" remaining="9" etc="1602427370"/>
+<taskprogress task="NSE" time="1602427391" percent="93.46" remaining="7" etc="1602427397"/>
+<taskprogress task="NSE" time="1602427421" percent="93.46" remaining="9" etc="1602427429"/>
+<taskprogress task="NSE" time="1602427451" percent="97.39" remaining="5" etc="1602427455"/>
+<taskprogress task="NSE" time="1602427481" percent="97.39" remaining="5" etc="1602427486"/>
+<taskprogress task="NSE" time="1602427511" percent="97.39" remaining="6" etc="1602427517"/>
+<taskprogress task="NSE" time="1602427541" percent="98.04" remaining="5" etc="1602427546"/>
+<taskprogress task="NSE" time="1602427571" percent="98.04" remaining="6" etc="1602427576"/>
+<taskprogress task="NSE" time="1602427601" percent="98.04" remaining="7" etc="1602427607"/>
+<taskprogress task="NSE" time="1602427631" percent="98.37" remaining="6" etc="1602427636"/>
+<taskprogress task="NSE" time="1602427661" percent="98.37" remaining="6" etc="1602427667"/>
+<taskprogress task="NSE" time="1602427691" percent="98.37" remaining="7" etc="1602427697"/>
+<taskprogress task="NSE" time="1602427721" percent="98.69" remaining="6" etc="1602427727"/>
+<taskprogress task="NSE" time="1602427751" percent="98.69" remaining="6" etc="1602427757"/>
+<taskprogress task="NSE" time="1602427781" percent="98.69" remaining="7" etc="1602427787"/>
+<taskprogress task="NSE" time="1602427811" percent="98.69" remaining="7" etc="1602427818"/>
+<taskprogress task="NSE" time="1602427841" percent="99.02" remaining="6" etc="1602427846"/>
+<taskprogress task="NSE" time="1602427871" percent="99.02" remaining="6" etc="1602427877"/>
+<taskprogress task="NSE" time="1602427901" percent="99.02" remaining="6" etc="1602427907"/>
+<taskprogress task="NSE" time="1602427931" percent="99.02" remaining="7" etc="1602427937"/>
+<taskprogress task="NSE" time="1602427961" percent="99.02" remaining="7" etc="1602427968"/>
+<taskprogress task="NSE" time="1602427991" percent="99.02" remaining="7" etc="1602427998"/>
+<taskprogress task="NSE" time="1602428021" percent="99.02" remaining="8" etc="1602428028"/>
+<taskprogress task="NSE" time="1602428051" percent="99.02" remaining="8" etc="1602428058"/>
+<taskprogress task="NSE" time="1602428081" percent="99.02" remaining="8" etc="1602428089"/>
+<taskprogress task="NSE" time="1602428111" percent="99.35" remaining="6" etc="1602428116"/>
+<taskprogress task="NSE" time="1602428141" percent="99.35" remaining="6" etc="1602428147"/>
+<taskprogress task="NSE" time="1602428171" percent="99.35" remaining="6" etc="1602428177"/>
+<taskprogress task="NSE" time="1602428201" percent="99.35" remaining="6" etc="1602428207"/>
+<taskprogress task="NSE" time="1602428231" percent="99.35" remaining="7" etc="1602428237"/>
+<taskprogress task="NSE" time="1602428261" percent="99.35" remaining="7" etc="1602428267"/>
+<taskprogress task="NSE" time="1602428291" percent="99.35" remaining="7" etc="1602428298"/>
+<taskprogress task="NSE" time="1602428321" percent="99.67" remaining="4" etc="1602428324"/>
+<taskprogress task="NSE" time="1602428351" percent="99.67" remaining="4" etc="1602428354"/>
+<taskprogress task="NSE" time="1602428381" percent="99.67" remaining="4" etc="1602428385"/>
+<taskprogress task="NSE" time="1602428411" percent="99.67" remaining="4" etc="1602428415"/>
+<taskprogress task="NSE" time="1602428441" percent="99.67" remaining="4" etc="1602428445"/>
+<taskprogress task="NSE" time="1602428471" percent="99.67" remaining="4" etc="1602428475"/>
+<taskprogress task="NSE" time="1602428501" percent="99.67" remaining="4" etc="1602428505"/>
+<taskprogress task="NSE" time="1602428531" percent="99.67" remaining="5" etc="1602428535"/>
+<taskprogress task="NSE" time="1602428561" percent="99.67" remaining="5" etc="1602428565"/>
+<taskprogress task="NSE" time="1602428591" percent="99.67" remaining="5" etc="1602428595"/>
+<taskprogress task="NSE" time="1602428621" percent="99.67" remaining="5" etc="1602428625"/>
+<taskprogress task="NSE" time="1602428651" percent="99.67" remaining="5" etc="1602428655"/>
+<taskprogress task="NSE" time="1602428681" percent="99.67" remaining="5" etc="1602428686"/>
+<taskprogress task="NSE" time="1602428711" percent="99.67" remaining="5" etc="1602428716"/>
+<taskprogress task="NSE" time="1602428741" percent="99.67" remaining="5" etc="1602428746"/>
+<taskprogress task="NSE" time="1602429052" percent="99.67" remaining="6" etc="1602429058"/>
+<taskend task="NSE" time="1602429070"/>
+<taskbegin task="NSE" time="1602429070"/>
+<taskend task="NSE" time="1602429089"/>
+<taskbegin task="NSE" time="1602429089"/>
+<taskend task="NSE" time="1602429091"/>
+<host starttime="1602427285" endtime="1602429091"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.219.19" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-apache-negotiation" output="mod_negotiation enabled."/><script id="http-backup-finder" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-chrono" output="Request times for /; avg: 1245.73ms; min: 1104.63ms; max: 1449.28ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.219.19&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 100&#xa;    Comment: &#xa;        &lt;!-&#45; .page-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 115&#xa;    Comment: &#xa;        &lt;!-&#45; .content-area -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 112&#xa;    Comment: &#xa;        &lt;!-&#45; .error-404 -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 8&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &#x9;&lt;script src=&quot;https://10.10.219.19:443/wp-content/themes/twentyfifteen/js/html5.js&quot;&gt;&lt;/script&gt;&#xa;        &#x9;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 123&#xa;    Comment: &#xa;        &lt;!-&#45; .site-info -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 88&#xa;    Comment: &#xa;        &lt;!-&#45; .secondary -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/&#xa;    Line number: 3&#xa;    Comment: &#xa;         //~~\ |   |    /\  |~~\|~~  |\  | /~~\~~|~~    /\  |  /~~\ |\  ||~~&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 124&#xa;    Comment: &#xa;        &lt;!-&#45; .site-footer -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 130&#xa;    Comment: &#xa;        /* &lt;![CDATA[ */&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 126&#xa;    Comment: &#xa;        &lt;!-&#45; .site -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 114&#xa;    Comment: &#xa;        &lt;!-&#45; .site-main -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 132&#xa;    Comment: &#xa;        /* ]]&gt; */&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 39&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 8]&gt;&#xa;        &lt;link rel=&apos;stylesheet&apos; id=&apos;twentyfifteen-ie7-css&apos;  href=&apos;https://10.10.219.19:443/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010&apos; type=&apos;text/css&apos; media=&apos;all&apos; /&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/&#xa;    Line number: 19&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;              &lt;p class=&quot;browserupgrade&quot;&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;&#xa;            &#xa;        &#xa;            &lt;!-&#45; Google Plus confirmation -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 118&#xa;    Comment: &#xa;        &lt;!-&#45; .site-content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 63&#xa;    Comment: &#xa;        &lt;!-&#45; .site-branding -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/main-acba06a5.js&#xa;    Line number: 1095&#xa;    Comment: &#xa;         //&quot;error&quot; === t.body.type ? this.handleEmailError() : this.handleEmailSuccess()&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 111&#xa;    Comment: &#xa;        &lt;!-&#45; .page-content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/&#xa;    Line number: 2&#xa;    Comment: &#xa;        &lt;!-&#45;&#xa;        \   //~~\ |   |    /\  |~~\|~~  |\  | /~~\~~|~~    /\  |  /~~\ |\  ||~~&#xa;         \ /|    ||   |   /__\ |__/|-&#45;  | \ ||    | |     /__\ | |    || \ ||-&#45;&#xa;          |  \__/  \_/   /    \|  \|__  |  \| \__/  |    /    \|__\__/ |  \||__&#xa;        -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 64&#xa;    Comment: &#xa;        &lt;!-&#45; .site-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 90&#xa;    Comment: &#xa;        &lt;!-&#45; .sidebar -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 36&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &lt;link rel=&apos;stylesheet&apos; id=&apos;twentyfifteen-ie-css&apos;  href=&apos;https://10.10.219.19:443/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010&apos; type=&apos;text/css&apos; media=&apos;all&apos; /&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.219.19:443/js/BASE_URL&#xa;    Line number: 86&#xa;    Comment: &#xa;        &lt;!-&#45; .widget-area -&#45;&gt;&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.219.19&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: https://10.10.219.19:443/js/vendor/null,this.tags.length=0%7d,t.get=function()%7bif(0==this.tags.length)return&#xa;    Form id: &#xa;    Form action: https://10.10.219.19:443/&#xa;    &#xa;    Path: https://10.10.219.19:443/js/vendor/null,this.tags.length=0%7d,t.get=function()%7bif(0==this.tags.length)return&#xa;    Form id: &#xa;    Form action: https://10.10.219.19:443/&#xa;    &#xa;    Path: https://10.10.219.19:443/js/BASE_URL&#xa;    Form id: &#xa;    Form action: https://10.10.219.19:443/&#xa;    &#xa;    Path: https://10.10.219.19:443/js/BASE_URL&#xa;    Form id: &#xa;    Form action: https://10.10.219.19:443/&#xa;    &#xa;    Path: https://10.10.219.19:443/wp-login.php&#xa;    Form id: loginform&#xa;    Form action: https://10.10.219.19:443/wp-login.php&#xa;"/><script id="http-date" output="Sun, 11 Oct 2020 14:41:49 GMT; +2s from local time."><elem key="date">2020-10-11T14:41:49+00:00</elem>
+<elem key="delta">2.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /admin/: Possible admin folder&#xa;  /admin/index.html: Possible admin folder&#xa;  /wp-login.php: Possible admin folder&#xa;"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.219.19&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 400&#xa;  &#x9;http://10.10.219.19:443/js/s_code.js&#xa;"/><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-grep" output="&#xa;  (1) https://10.10.219.19:443/: &#xa;    (1) ip: &#xa;      + 208.185.115.6&#xa;  (2) https://10.10.219.19:443/js/vendor/null,this.tags.length=0%7d,t.get=function()%7bif(0==this.tags.length)return: &#xa;    (2) ip: &#xa;      + 10.10.219.19&#xa;      + 172.16.58.187"><table key="(1) https://10.10.219.19:443/">
+<table key="(1) ip">
+<elem>+ 208.185.115.6</elem>
+</table>
+</table>
+<table key="(2) https://10.10.219.19:443/js/vendor/null,this.tags.length=0%7d,t.get=function()%7bif(0==this.tags.length)return">
+<table key="(2) ip">
+<elem>+ 10.10.219.19</elem>
+<elem>+ 172.16.58.187</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Sun, 11 Oct 2020 14:42:14 GMT&#xa;  Server: Apache&#xa;  X-Frame-Options: SAMEORIGIN&#xa;  Accept-Ranges: bytes&#xa;  Vary: Accept-Encoding&#xa;  X-Mod-Pagespeed: 1.9.32.3-4523&#xa;  Cache-Control: max-age=0, no-cache&#xa;  Content-Length: 1077&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-passwd" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-php-version" output="Logo query returned unknown hash 45e8c034daf4d77815c72f5636041f98&#xa;Credits query returned unknown hash 45e8c034daf4d77815c72f5636041f98"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server&#xa;  X_Frame_Options: &#xa;    Header: X-Frame-Options: SAMEORIGIN&#xa;    Description: The browser must not display this content in any frame from a page of different origin than the content itself.&#xa;  Cache_Control: &#xa;    Header: Cache-Control: max-age=0, no-cache"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+<table key="X_Frame_Options">
+<elem>Header: X-Frame-Options: SAMEORIGIN</elem>
+<elem>Description: The browser must not display this content in any frame from a page of different origin than the content itself.</elem>
+</table>
+<table key="Cache_Control">
+<elem>Header: Cache-Control: max-age=0, no-cache</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; php: 2&#xa;    /comments/feed/&#xa;      Other: 1&#xa;    /css/&#xa;      css: 1&#xa;    /feed/&#xa;      Other: 1&#xa;    /js/&#xa;      js: 1&#xa;    /js/vendor/&#xa;      js: 1&#xa;    /wp-content/themes/twentyfifteen/&#xa;      css: 1&#xa;    /wp-includes/&#xa;      xml: 1&#xa;    /wp-includes/js/jquery/&#xa;      js: 2&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /wp-includes/js/jquery/&#xa;  Total files found (by extension):&#xa;    Other: 3; css: 2; js: 4; php: 2; xml: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-userdir-enum" output="Potential Users: root, admin, administrator, webadmin, sysadmin, netadmin, guest, user, web, test"/><script id="http-vhosts" output="&#xa;99 names had status 200&#xa;28 names had status 400"/><script id="http-wordpress-enum" output="&#xa;Search limited to top 100 themes/plugins&#xa;  plugins&#xa;    akismet&#xa;    contact-form-7 4.1&#xa;    jetpack 3.3.2&#xa;    all-in-one-seo-pack &#xa;    google-sitemap-generator 4.0.7.1&#xa;    google-analytics-for-wordpress 5.3.2&#xa;    wptouch 3.7.3&#xa;    all-in-one-wp-migration 2.0.4&#xa;    wp-mail-smtp 0.9.5&#xa;  themes&#xa;    twentythirteen 1.6&#xa;    twentyfourteen 1.5&#xa;    twentyfifteen 1.3&#xa;"><table key="akismet">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/akismet/</elem>
+<elem key="name">akismet</elem>
+</table>
+<table key="contact-form-7">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/contact-form-7/</elem>
+<elem key="installation_version">4.1</elem>
+<elem key="name">contact-form-7</elem>
+</table>
+<table key="jetpack">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/jetpack/</elem>
+<elem key="installation_version">3.3.2</elem>
+<elem key="name">jetpack</elem>
+</table>
+<table key="all-in-one-seo-pack">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/all-in-one-seo-pack/</elem>
+<elem key="installation_version"></elem>
+<elem key="name">all-in-one-seo-pack</elem>
+</table>
+<table key="google-sitemap-generator">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/google-sitemap-generator/</elem>
+<elem key="installation_version">4.0.7.1</elem>
+<elem key="name">google-sitemap-generator</elem>
+</table>
+<table key="google-analytics-for-wordpress">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/google-analytics-for-wordpress/</elem>
+<elem key="installation_version">5.3.2</elem>
+<elem key="name">google-analytics-for-wordpress</elem>
+</table>
+<table key="wptouch">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/wptouch/</elem>
+<elem key="installation_version">3.7.3</elem>
+<elem key="name">wptouch</elem>
+</table>
+<table key="all-in-one-wp-migration">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/all-in-one-wp-migration/</elem>
+<elem key="installation_version">2.0.4</elem>
+<elem key="name">all-in-one-wp-migration</elem>
+</table>
+<table key="wp-mail-smtp">
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/wp-mail-smtp/</elem>
+<elem key="installation_version">0.9.5</elem>
+<elem key="name">wp-mail-smtp</elem>
+</table>
+<table key="twentythirteen">
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentythirteen/</elem>
+<elem key="installation_version">1.6</elem>
+<elem key="name">twentythirteen</elem>
+</table>
+<table key="twentyfourteen">
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentyfourteen/</elem>
+<elem key="installation_version">1.5</elem>
+<elem key="name">twentyfourteen</elem>
+</table>
+<table key="twentyfifteen">
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentyfifteen/</elem>
+<elem key="installation_version">1.3</elem>
+<elem key="name">twentyfifteen</elem>
+</table>
+<elem key="title">Search limited to top 100 themes/plugins</elem>
+</script><script id="ssl-cert" output="Subject: commonName=www.example.com&#xa;Issuer: commonName=www.example.com&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2015-09-16T10:45:03&#xa;Not valid after:  2025-09-13T10:45:03&#xa;MD5:   3c16 3b19 87c3 42ad 6634 c1c9 d0aa fb97&#xa;SHA-1: ef0c 5fa5 931a 09a5 687c a2c2 80c4 c792 07ce f71b&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBqzCCARQCCQCgSfELirADCzANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDDA93&#xa;d3cuZXhhbXBsZS5jb20wHhcNMTUwOTE2MTA0NTAzWhcNMjUwOTEzMTA0NTAzWjAa&#xa;MRgwFgYDVQQDDA93d3cuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0A&#xa;MIGJAoGBANlxG/38e8Dy/mxwZzBboYF64tu1n8c2zsWOw8FFU0azQFxv7RPKcGwt&#xa;sALkdAMkNcWS7J930xGamdCZPdoRY4hhfesLIshZxpyk6NoYBkmtx+GfwrrLh6mU&#xa;yvsyno29GAlqYWfffzXRoibdDtGTn9NeMqXobVTTKTaR0BGspOS5AgMBAAEwDQYJ&#xa;KoZIhvcNAQEFBQADgYEASfG0dH3x4/XaN6IWwaKo8XeRStjYTy/uBJEBUERlP17X&#xa;1TooZOYbvgFAqK8DPOl7EkzASVeu0mS5orfptWjOZ/UWVZujSNj7uu7QR4vbNERx&#xa;ncZrydr7FklpkIN5Bj8SYc94JI9GsrHip4mpbystXkxncoOVESjRBES/iatbkl0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">www.example.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">www.example.com</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x556f4485f708</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">userdata: 0x556f44b85fa8</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2015-09-16T10:45:03</elem>
+<elem key="notAfter">2025-09-13T10:45:03</elem>
+</table>
+<elem key="md5">3c163b1987c342ad6634c1c9d0aafb97</elem>
+<elem key="sha1">ef0c5fa5931a09a5687ca2c280c4c79207cef71b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBqzCCARQCCQCgSfELirADCzANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDDA93&#xa;d3cuZXhhbXBsZS5jb20wHhcNMTUwOTE2MTA0NTAzWhcNMjUwOTEzMTA0NTAzWjAa&#xa;MRgwFgYDVQQDDA93d3cuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0A&#xa;MIGJAoGBANlxG/38e8Dy/mxwZzBboYF64tu1n8c2zsWOw8FFU0azQFxv7RPKcGwt&#xa;sALkdAMkNcWS7J930xGamdCZPdoRY4hhfesLIshZxpyk6NoYBkmtx+GfwrrLh6mU&#xa;yvsyno29GAlqYWfffzXRoibdDtGTn9NeMqXobVTTKTaR0BGspOS5AgMBAAEwDQYJ&#xa;KoZIhvcNAQEFBQADgYEASfG0dH3x4/XaN6IWwaKo8XeRStjYTy/uBJEBUERlP17X&#xa;1TooZOYbvgFAqK8DPOl7EkzASVeu0mS5orfptWjOZ/UWVZujSNj7uu7QR4vbNERx&#xa;ncZrydr7FklpkIN5Bj8SYc94JI9GsrHip4mpbystXkxncoOVESjRBES/iatbkl0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-enum-ciphers" output="&#xa;  TLSv1.0: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  TLSv1.1: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  TLSv1.2: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  least strength: A"><table key="TLSv1.0">
+<table key="ciphers">
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<table key="TLSv1.1">
+<table key="ciphers">
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<table key="TLSv1.2">
+<table key="ciphers">
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">secp256r1</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<elem key="least strength">A</elem>
+</script><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="187245" rttvar="187245" to="936225"/>
+</host>
+<taskbegin task="NSE" time="1602429091"/>
+<taskend task="NSE" time="1602429091"/>
+<taskbegin task="NSE" time="1602429091"/>
+<taskend task="NSE" time="1602429091"/>
+<taskbegin task="NSE" time="1602429091"/>
+<taskend task="NSE" time="1602429091"/>
+<runstats><finished time="1602429091" timestr="Sun Oct 11 21:11:31 2020" elapsed="1806.41" summary="Nmap done at Sun Oct 11 21:11:31 2020; 1 IP address (1 host up) scanned in 1806.41 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

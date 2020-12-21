@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Sun Oct  4 23:05:11 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/khan/OSCP_Preparation/THM/10.10.177.152/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/THM/10.10.177.152/scans/xml/_full_tcp_nmap.xml 10.10.177.152

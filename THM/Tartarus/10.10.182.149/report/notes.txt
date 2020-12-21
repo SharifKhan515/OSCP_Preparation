@@ -1,0 +1,12 @@
+[*] ftp found on tcp/21.
+
+
+
+[*] ssh found on tcp/22.
+
+
+
+[*] http found on tcp/80.
+
+
+

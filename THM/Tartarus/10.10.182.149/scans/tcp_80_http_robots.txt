@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Thu, 10 Sep 2020 15:10:52 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Last-Modified: Sun, 05 Jul 2020 21:45:45 GMT
+ETag: "53-5a9b8ae384666"
+Accept-Ranges: bytes
+Content-Length: 83
+Vary: Accept-Encoding
+Content-Type: text/plain
+
+User-Agent: *
+Disallow : /admin-dir
+
+I told d4rckh we should hide our things deep.

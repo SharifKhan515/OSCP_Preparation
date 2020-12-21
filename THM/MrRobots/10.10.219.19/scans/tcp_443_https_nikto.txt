@@ -1,0 +1,17 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.219.19
++ Target Hostname:    10.10.219.19
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /CN=www.example.com
+                   Ciphers:  ECDHE-RSA-AES256-GCM-SHA384
+                   Issuer:   /CN=www.example.com
++ Start Time:         2020-10-11 20:41:37 (GMT6)
+---------------------------------------------------------------------------
++ Server: Apache
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The site uses SSL and the Strict-Transport-Security HTTP header is not defined.
++ The site uses SSL and Expect-CT header is not present.
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Retrieved x-powered-by header: PHP/5.5.29

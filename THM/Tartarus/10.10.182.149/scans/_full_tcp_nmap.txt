@@ -1,0 +1,66 @@
+# Nmap 7.80 scan initiated Thu Sep 10 21:10:28 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/khan/OSCP_Preparation/THM/Tartarus/10.10.182.149/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/THM/Tartarus/10.10.182.149/scans/xml/_full_tcp_nmap.xml 10.10.182.149
+adjust_timeouts2: packet supposedly had rtt of -196115 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -196115 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -395393 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -395393 microseconds.  Ignoring time.
+Nmap scan report for 10.10.182.149
+Host is up, received user-set (0.21s latency).
+Scanned at 2020-09-10 21:10:29 +06 for 937s
+Not shown: 65532 closed ports
+Reason: 65532 resets
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.60.114
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 98:6c:7f:49:db:54:cb:36:6d:d5:ff:75:42:4c:a7:e0 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZdORUZHg9RjrmmXa0kKVVlArZPd+zITEEkyYL1gzvyCHE9mu9jWkpuuwZRk8lrar+exGSTNcz/9wijYrGftUA/tJZ/4WRsHTbl6taJr7UYRoCgpNy0wXC3+oC5wfIdh3Lgah4MozwRPGJ5DQE+zIIf0sVlK2T2jxFXDjuxULdWM8TPjfsBjBcu55RZ6/iBC69LRp8AtKTVCe502yaUCRKM8GbxU7zVmsSAZxUOSDyB4u8uJ+IhS7oTy9PCHLmsHg899BozsFe+LArsxloL032VDsh9ZfUFiXhj3FSze49Wk32xX4s/atQJwpCxabtCCKjTMREwEbg/7z5UU+euBsL
+|   256 0c:7b:1a:9c:ed:4b:29:f5:3e:be:1c:9a:e4:4c:07:2c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJMh3A9yhxjDCJIcY6+SceWHxorSphXU0Jpvk8tfBkX4MsebBRvPq3SnRw5PfPLz7Nkk7xWDIcbPHsmTvMcmOLs=
+|   256 50:09:9f:c0:67:3e:89:93:b0:c9:85:f1:93:89:50:68 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC7R6jyxhQlyAs1SlBzJnXw4dHC28Tz+uMKKiNJ6AjUp
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+Aggressive OS guesses: Linux 3.10 - 3.13 (95%), ASUS RT-N56U WAP (Linux 3.4) (94%), Linux 3.1 (94%), Linux 3.16 (94%), Linux 3.2 (94%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 2.6.32 (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.10 (92%)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=9/10%OT=21%CT=1%CU=37027%PV=Y%DS=2%DC=T%G=Y%TM=5F5A458
+OS:E%P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10B%TI=Z%CI=I%TS=8)SEQ(SP=1
+OS:08%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=A)SEQ(SP=104%GCD=1%ISR=10A%TI=Z%TS=A)
+OS:OPS(O1=M508ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508
+OS:ST11NW6%O6=M508ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)
+OS:ECN(R=Y%DF=Y%T=40%W=6903%O=M508NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T
+OS:5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=
+OS:Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF
+OS:=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40
+OS:%CD=S)
+
+Uptime guess: 0.009 days (since Thu Sep 10 21:13:00 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 23/tcp)
+HOP RTT       ADDRESS
+1   208.93 ms 10.8.0.1
+2   209.01 ms 10.10.182.149
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 10 21:26:06 2020 -- 1 IP address (1 host up) scanned in 937.99 seconds

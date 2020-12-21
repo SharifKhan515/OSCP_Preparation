@@ -1,0 +1,41 @@
+# Nmap 7.80 scan initiated Thu Sep 10 21:10:28 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/khan/OSCP_Preparation/THM/Tartarus/10.10.182.149/scans/_quick_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/THM/Tartarus/10.10.182.149/scans/xml/_quick_tcp_nmap.xml 10.10.182.149
+Nmap scan report for 10.10.182.149
+Host is up, received user-set (0.21s latency).
+Scanned at 2020-09-10 21:10:29 +06 for 18s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 ftp      ftp            17 Jul 05 21:45 test.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.60.114
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 98:6c:7f:49:db:54:cb:36:6d:d5:ff:75:42:4c:a7:e0 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZdORUZHg9RjrmmXa0kKVVlArZPd+zITEEkyYL1gzvyCHE9mu9jWkpuuwZRk8lrar+exGSTNcz/9wijYrGftUA/tJZ/4WRsHTbl6taJr7UYRoCgpNy0wXC3+oC5wfIdh3Lgah4MozwRPGJ5DQE+zIIf0sVlK2T2jxFXDjuxULdWM8TPjfsBjBcu55RZ6/iBC69LRp8AtKTVCe502yaUCRKM8GbxU7zVmsSAZxUOSDyB4u8uJ+IhS7oTy9PCHLmsHg899BozsFe+LArsxloL032VDsh9ZfUFiXhj3FSze49Wk32xX4s/atQJwpCxabtCCKjTMREwEbg/7z5UU+euBsL
+|   256 0c:7b:1a:9c:ed:4b:29:f5:3e:be:1c:9a:e4:4c:07:2c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJMh3A9yhxjDCJIcY6+SceWHxorSphXU0Jpvk8tfBkX4MsebBRvPq3SnRw5PfPLz7Nkk7xWDIcbPHsmTvMcmOLs=
+|   256 50:09:9f:c0:67:3e:89:93:b0:c9:85:f1:93:89:50:68 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC7R6jyxhQlyAs1SlBzJnXw4dHC28Tz+uMKKiNJ6AjUp
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 10 21:10:47 2020 -- 1 IP address (1 host up) scanned in 18.88 seconds

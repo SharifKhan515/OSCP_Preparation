@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Sun, 11 Oct 2020 14:41:30 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Fri, 13 Nov 2015 07:28:21 GMT
+ETag: "29-52467010ef8ad"
+Accept-Ranges: bytes
+Content-Length: 41
+Content-Type: text/plain
+
+User-agent: *
+fsocity.dic
+key-1-of-3.txt

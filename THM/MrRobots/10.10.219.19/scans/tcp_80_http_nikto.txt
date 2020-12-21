@@ -1,0 +1,14 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.219.19
++ Target Hostname:    10.10.219.19
++ Target Port:        80
++ Start Time:         2020-10-11 20:41:25 (GMT6)
+---------------------------------------------------------------------------
++ Server: Apache
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Retrieved x-powered-by header: PHP/5.5.29
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Uncommon header 'tcn' found, with contents: list
++ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.html, index.php
