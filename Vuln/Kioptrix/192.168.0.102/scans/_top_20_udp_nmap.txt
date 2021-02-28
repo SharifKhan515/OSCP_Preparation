@@ -1,0 +1,62 @@
+# Nmap 7.91 scan initiated Sun Jan 31 02:15:02 2021 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/_top_20_udp_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/_top_20_udp_nmap.xml 192.168.0.102
+Nmap scan report for 192.168.0.102
+Host is up, received arp-response (0.00026s latency).
+Scanned at 2021-01-31 02:15:02 +06 for 280s
+
+PORT      STATE         SERVICE      REASON               VERSION
+53/udp    closed        domain       port-unreach ttl 255
+67/udp    open|filtered dhcps        no-response
+68/udp    closed        dhcpc        port-unreach ttl 255
+69/udp    closed        tftp         port-unreach ttl 255
+123/udp   closed        ntp          port-unreach ttl 255
+135/udp   open|filtered msrpc        no-response
+137/udp   open          netbios-ns   udp-response         Samba nmbd netbios-ns (workgroup: MYGROUP)
+138/udp   open|filtered netbios-dgm  no-response
+139/udp   closed        netbios-ssn  port-unreach ttl 255
+161/udp   open|filtered snmp         no-response
+162/udp   open|filtered snmptrap     no-response
+445/udp   open|filtered microsoft-ds no-response
+500/udp   closed        isakmp       port-unreach ttl 255
+514/udp   closed        syslog       port-unreach ttl 255
+520/udp   closed        route        port-unreach ttl 255
+631/udp   closed        ipp          port-unreach ttl 255
+1434/udp  open|filtered ms-sql-m     no-response
+1900/udp  closed        upnp         port-unreach ttl 255
+4500/udp  open|filtered nat-t-ike    no-response
+49152/udp open|filtered unknown      no-response
+MAC Address: 00:0C:29:50:D1:CA (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=1/31%OT=%CT=%CU=53%PV=Y%DS=1%DC=D%G=N%M=000C29%TM=6015BF5E%P=x86_64-pc-linux-gnu)
+SEQ(CI=Z%II=I)
+T5(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=FF%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=FF%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host: KIOPTRIX
+
+Host script results:
+| nbstat: NetBIOS name: KIOPTRIX, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   KIOPTRIX<00>         Flags: <unique><active>
+|   KIOPTRIX<03>         Flags: <unique><active>
+|   KIOPTRIX<20>         Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   MYGROUP<00>          Flags: <group><active>
+|   MYGROUP<1d>          Flags: <unique><active>
+|   MYGROUP<1e>          Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.26 ms 192.168.0.102
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 31 02:19:42 2021 -- 1 IP address (1 host up) scanned in 279.54 seconds

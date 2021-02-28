@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Jan 31 02:16:10 2021 as: nmap -vv -&#45;reason -Pn -sV -p 111 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_111_rpc_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/tcp_111_rpc_nmap.xml 192.168.0.102 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 111 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_111_rpc_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/tcp_111_rpc_nmap.xml 192.168.0.102" start="1612037770" startstr="Sun Jan 31 02:16:10 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1612037770"/>
+<taskend task="NSE" time="1612037770"/>
+<taskbegin task="NSE" time="1612037770"/>
+<taskend task="NSE" time="1612037770"/>
+<taskbegin task="ARP Ping Scan" time="1612037770"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1612037770" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1612037770"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1612037770"/>
+<taskbegin task="SYN Stealth Scan" time="1612037770"/>
+<taskend task="SYN Stealth Scan" time="1612037771" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1612037771"/>
+<taskend task="Service scan" time="1612037777" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1612037777"/>
+<taskend task="NSE" time="1612037787"/>
+<taskbegin task="NSE" time="1612037787"/>
+<taskend task="NSE" time="1612037787"/>
+<host starttime="1612037770" endtime="1612037787"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2            111/tcp   rpcbind&#xa;  100000  2            111/udp   rpcbind&#xa;  100024  1           1024/tcp   status&#xa;  100024  1           1024/udp   status&#xa;"><table key="100000">
+<table key="udp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+</table>
+<table key="100024">
+<table key="udp">
+<elem key="port">1024</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">1024</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="205" rttvar="3779" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1612037787"/>
+<taskend task="NSE" time="1612037787"/>
+<taskbegin task="NSE" time="1612037787"/>
+<taskend task="NSE" time="1612037787"/>
+<runstats><finished time="1612037787" timestr="Sun Jan 31 02:16:27 2021" summary="Nmap done at Sun Jan 31 02:16:27 2021; 1 IP address (1 host up) scanned in 16.67 seconds" elapsed="16.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

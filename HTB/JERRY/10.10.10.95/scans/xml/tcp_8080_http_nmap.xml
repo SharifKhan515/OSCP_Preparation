@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Feb 28 02:21:14 2021 as: nmap -vv -&#45;reason -Pn -sV -p 8080 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/tcp_8080_http_nmap.txt -oX /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/xml/tcp_8080_http_nmap.xml 10.10.10.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 8080 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/tcp_8080_http_nmap.txt -oX /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/xml/tcp_8080_http_nmap.xml 10.10.10.95" start="1614457274" startstr="Sun Feb 28 02:21:14 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8080"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1614457275"/>
+<taskend task="NSE" time="1614457275"/>
+<taskbegin task="NSE" time="1614457275"/>
+<taskend task="NSE" time="1614457275"/>
+<taskbegin task="NSE" time="1614457275"/>
+<taskend task="NSE" time="1614457275"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1614457275"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1614457275"/>
+<taskbegin task="SYN Stealth Scan" time="1614457275"/>
+<taskend task="SYN Stealth Scan" time="1614457275" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1614457275"/>
+<taskend task="Service scan" time="1614457282" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1614457282"/>
+<taskprogress task="NSE" time="1614457313" percent="86.56" remaining="5" etc="1614457318"/>
+<taskprogress task="NSE" time="1614457343" percent="96.74" remaining="3" etc="1614457345"/>
+<taskprogress task="NSE" time="1614457373" percent="99.02" remaining="1" etc="1614457374"/>
+<taskprogress task="NSE" time="1614457403" percent="99.02" remaining="2" etc="1614457404"/>
+<taskprogress task="NSE" time="1614457433" percent="99.02" remaining="2" etc="1614457434"/>
+<taskprogress task="NSE" time="1614457463" percent="99.02" remaining="2" etc="1614457465"/>
+<taskprogress task="NSE" time="1614457493" percent="99.35" remaining="2" etc="1614457494"/>
+<taskprogress task="NSE" time="1614457523" percent="99.35" remaining="2" etc="1614457525"/>
+<taskprogress task="NSE" time="1614457553" percent="99.67" remaining="1" etc="1614457554"/>
+<taskprogress task="NSE" time="1614457583" percent="99.67" remaining="1" etc="1614457584"/>
+<taskprogress task="NSE" time="1614457613" percent="99.67" remaining="2" etc="1614457614"/>
+<taskprogress task="NSE" time="1614457643" percent="99.67" remaining="2" etc="1614457644"/>
+<taskprogress task="NSE" time="1614457673" percent="99.67" remaining="2" etc="1614457674"/>
+<taskprogress task="NSE" time="1614457703" percent="99.67" remaining="2" etc="1614457704"/>
+<taskprogress task="NSE" time="1614457733" percent="99.67" remaining="2" etc="1614457734"/>
+<taskprogress task="NSE" time="1614457763" percent="99.67" remaining="2" etc="1614457765"/>
+<taskprogress task="NSE" time="1614457793" percent="99.67" remaining="2" etc="1614457795"/>
+<taskprogress task="NSE" time="1614457823" percent="99.67" remaining="2" etc="1614457825"/>
+<taskprogress task="NSE" time="1614457853" percent="99.67" remaining="2" etc="1614457855"/>
+<taskprogress task="NSE" time="1614457883" percent="99.67" remaining="2" etc="1614457885"/>
+<taskprogress task="NSE" time="1614457913" percent="99.67" remaining="3" etc="1614457915"/>
+<taskprogress task="NSE" time="1614457943" percent="99.67" remaining="3" etc="1614457945"/>
+<taskprogress task="NSE" time="1614457973" percent="99.67" remaining="3" etc="1614457975"/>
+<taskprogress task="NSE" time="1614458003" percent="99.67" remaining="3" etc="1614458005"/>
+<taskend task="NSE" time="1614458019"/>
+<taskbegin task="NSE" time="1614458019"/>
+<taskend task="NSE" time="1614458020"/>
+<taskbegin task="NSE" time="1614458020"/>
+<taskend task="NSE" time="1614458020"/>
+<host starttime="1614457275" endtime="1614458020"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.95&#xa;  url                                        method&#xa;  http://10.10.10.95:8080/host-manager/html  HTTP: Basic&#xa;  http://10.10.10.95:8080/manager/html       HTTP: Basic&#xa;  http://10.10.10.95:8080/manager/status     HTTP: Basic&#xa;"/><script id="http-chrono" output="Request times for /; avg: 1216.87ms; min: 1021.39ms; max: 1624.12ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.95&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 81&#xa;    Comment: &#xa;        &lt;!-&#45;LEFT SIDE NAVIGATION-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 664&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 14&#xa;    Comment: &#xa;        /* Prevent border-collapsing for table child elements like &lt;div&gt; */&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/RELEASE-NOTES.txt&#xa;    Line number: 60&#xa;    Comment: &#xa;        /**/&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 95&#xa;    Comment: &#xa;        &lt;!-&#45;()-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 281&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/manager/status&#xa;    Line number: 6&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;            -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 652&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 281&#xa;    Comment: &#xa;        &lt;!-&#45;FOOTER SEPARATOR-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 713&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 281&#xa;    Comment: &#xa;        &lt;!-&#45;PAGE FOOTER-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/appdev/&#xa;    Line number: 129&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 81&#xa;    Comment: &#xa;        &lt;!-&#45;APACHE LOGO-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/deployer-howto.html&#xa;    Line number: 395&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 81&#xa;    Comment: &#xa;        &lt;!-&#45;RIGHT SIDE MAIN BODY-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/examples/&#xa;    Line number: 1&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 79&#xa;    Comment: &#xa;        &lt;!-&#45;PROJECT LOGO-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/setup.html&#xa;    Line number: 246&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/tomcat.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        */&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 36&#xa;    Comment: &#xa;        /* To prevent &lt;pre&gt;s from taking the complete available width. */&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/config/&#xa;    Line number: 149&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 265&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/cluster-howto.html&#xa;    Line number: 715&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 79&#xa;    Comment: &#xa;        &lt;!-&#45;PAGE HEADER-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 265&#xa;    Comment: &#xa;        &lt;!-&#45;//-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 37&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;          */&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 668&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 663&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 437&#xa;    Comment: &#xa;        &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/security-howto.html&#xa;    Line number: 570&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/realm-howto.html&#xa;    Line number: 1263&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/jndi-datasource-examples-howto.html&#xa;    Line number: 669&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.95:8080/&#xa;    Line number: 52&#xa;    Comment: &#xa;        &#xa;        &#xa;                        -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/&#xa;    Line number: 81&#xa;    Comment: &#xa;        &lt;!-&#45;HEADER SEPARATOR-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.95:8080/docs/manager-howto.html&#xa;    Line number: 1405&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;                      //-&#45;&gt;&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Sun, 28 Feb 2021 03:22:44 GMT; +7h01m16s from local time."><elem key="date">2021-02-28T03:22:44+00:00</elem>
+<elem key="delta">25276.0</elem>
+</script><script id="http-default-accounts" output="&#xa;  [Apache Tomcat] at /manager/html/&#xa;    tomcat:s3cret&#xa;  [Apache Tomcat Host Manager] at /host-manager/html/&#xa;    (no valid default credentials found)&#xa;"><table key="Apache Tomcat">
+<elem key="cpe">cpe:/a:apache:tomcat</elem>
+<elem key="path">/manager/html/</elem>
+<table key="credentials">
+<table>
+<elem key="username">tomcat</elem>
+<elem key="password">s3cret</elem>
+</table>
+</table>
+</table>
+<table key="Apache Tomcat Host Manager">
+<elem key="cpe">cpe:/a:apache:tomcat</elem>
+<elem key="path">/host-manager/html/</elem>
+<table key="credentials">
+</table>
+</table>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /examples/: Sample scripts&#xa;  /manager/html/upload: Apache Tomcat (401 Unauthorized)&#xa;  /manager/html: Apache Tomcat (401 Unauthorized)&#xa;  /docs/: Potentially interesting folder&#xa;"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.95&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 401&#xa;  &#x9;http://10.10.10.95:8080/host-manager/html&#xa;  &#xa;  Error Code: 401&#xa;  &#x9;http://10.10.10.95:8080/manager/html&#xa;  &#xa;  Error Code: 401&#xa;  &#x9;http://10.10.10.95:8080/manager/status&#xa;"/><script id="http-favicon" output="Apache Tomcat"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-grep" output="&#xa;  (1) http://10.10.10.95:8080/docs/appdev/: &#xa;    (1) email: &#xa;      + craigmcc@apache.org&#xa;  (2) http://10.10.10.95:8080/docs/realm-howto.html: &#xa;    (2) email: &#xa;      + j.jones@mycompany.com&#xa;      + f.bloggs@mycompany.com"><table key="(1) http://10.10.10.95:8080/docs/appdev/">
+<table key="(1) email">
+<elem>+ craigmcc@apache.org</elem>
+</table>
+</table>
+<table key="(2) http://10.10.10.95:8080/docs/realm-howto.html">
+<table key="(2) email">
+<elem>+ j.jones@mycompany.com</elem>
+<elem>+ f.bloggs@mycompany.com</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Server: Apache-Coyote/1.1&#xa;  Content-Type: text/html;charset=ISO-8859-1&#xa;  Transfer-Encoding: chunked&#xa;  Date: Sun, 28 Feb 2021 03:22:47 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash 58b1df487e9db66c251a453a81548d18&#xa;Credits query returned unknown hash 58b1df487e9db66c251a453a81548d18"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache-Coyote/1.1"><elem>Apache-Coyote/1.1</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; css: 1; ico: 1; png: 1&#xa;    /docs/&#xa;      html: 8; txt: 1&#xa;    /docs/api/&#xa;      html: 1&#xa;    /docs/appdev/&#xa;      Other: 1&#xa;    /docs/config/&#xa;      Other: 1&#xa;    /examples/&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 2&#xa;    Dir: /docs/config/&#xa;  Total files found (by extension):&#xa;    Other: 4; css: 1; html: 9; ico: 1; png: 1; txt: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Apache Tomcat/7.0.88"><elem key="title">Apache Tomcat/7.0.88</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;128 names had status 200"/><script id="http-waf-detect" output="IDS/IPS/WAF detected:&#xa;10.10.10.95:8080/?p4yl04d3=&lt;script&gt;alert(document.cookie)&lt;/script&gt;"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/></port>
+</ports>
+<times srtt="283615" rttvar="283615" to="1418075"/>
+</host>
+<taskbegin task="NSE" time="1614458020"/>
+<taskend task="NSE" time="1614458020"/>
+<taskbegin task="NSE" time="1614458020"/>
+<taskend task="NSE" time="1614458020"/>
+<taskbegin task="NSE" time="1614458020"/>
+<taskend task="NSE" time="1614458020"/>
+<runstats><finished time="1614458020" timestr="Sun Feb 28 02:33:40 2021" summary="Nmap done at Sun Feb 28 02:33:40 2021; 1 IP address (1 host up) scanned in 746.72 seconds" elapsed="746.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

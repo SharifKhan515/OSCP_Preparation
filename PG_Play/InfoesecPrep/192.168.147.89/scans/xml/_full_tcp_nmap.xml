@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Tue Feb  2 01:57:42 2021 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/xml/_full_tcp_nmap.xml 192.168.147.89 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/xml/_full_tcp_nmap.xml 192.168.147.89" start="1612209462" startstr="Tue Feb  2 01:57:42 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1612209462"/>
+<taskend task="NSE" time="1612209462"/>
+<taskbegin task="NSE" time="1612209462"/>
+<taskend task="NSE" time="1612209462"/>
+<taskbegin task="NSE" time="1612209462"/>
+<taskend task="NSE" time="1612209462"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1612209462"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1612209462"/>
+<taskbegin task="SYN Stealth Scan" time="1612209462"/>
+<taskprogress task="SYN Stealth Scan" time="1612209493" percent="8.22" remaining="346" etc="1612209839"/>
+<taskprogress task="SYN Stealth Scan" time="1612209523" percent="8.72" remaining="639" etc="1612210162"/>
+<taskprogress task="SYN Stealth Scan" time="1612209553" percent="9.18" remaining="901" etc="1612210453"/>
+<taskprogress task="SYN Stealth Scan" time="1612209583" percent="9.73" remaining="1123" etc="1612210706"/>
+<taskprogress task="SYN Stealth Scan" time="1612209637" percent="12.86" remaining="1186" etc="1612210823"/>
+<taskprogress task="SYN Stealth Scan" time="1612209751" percent="20.57" remaining="1116" etc="1612210867"/>
+<taskprogress task="SYN Stealth Scan" time="1612209859" percent="27.56" remaining="1044" etc="1612210903"/>
+<taskprogress task="SYN Stealth Scan" time="1612209946" percent="33.25" remaining="972" etc="1612210918"/>
+<taskprogress task="SYN Stealth Scan" time="1612210027" percent="38.66" remaining="897" etc="1612210923"/>
+<taskprogress task="SYN Stealth Scan" time="1612210132" percent="45.09" remaining="816" etc="1612210948"/>
+<taskprogress task="SYN Stealth Scan" time="1612210216" percent="50.43" remaining="742" etc="1612210957"/>
+<taskprogress task="SYN Stealth Scan" time="1612210315" percent="56.21" remaining="665" etc="1612210980"/>
+<taskprogress task="SYN Stealth Scan" time="1612210447" percent="62.63" remaining="588" etc="1612211035"/>
+<taskprogress task="SYN Stealth Scan" time="1612210528" percent="67.87" remaining="505" etc="1612211033"/>
+<taskprogress task="SYN Stealth Scan" time="1612210594" percent="72.74" remaining="425" etc="1612211018"/>
+<taskprogress task="SYN Stealth Scan" time="1612210666" percent="77.81" remaining="344" etc="1612211009"/>
+<taskprogress task="SYN Stealth Scan" time="1612210735" percent="82.78" remaining="265" etc="1612211000"/>
+<taskprogress task="SYN Stealth Scan" time="1612210813" percent="87.92" remaining="186" etc="1612210999"/>
+<taskprogress task="SYN Stealth Scan" time="1612210897" percent="93.08" remaining="107" etc="1612211004"/>
+<taskend task="SYN Stealth Scan" time="1612211027" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1612211027"/>
+<taskend task="Service scan" time="1612211154" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1612211165"/>
+<taskend task="Traceroute" time="1612211166"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1612211166"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1612211166"/>
+<taskbegin task="NSE" time="1612211166"/>
+<taskend task="NSE" time="1612211178"/>
+<taskbegin task="NSE" time="1612211178"/>
+<taskend task="NSE" time="1612211179"/>
+<taskbegin task="NSE" time="1612211179"/>
+<taskend task="NSE" time="1612211179"/>
+<host starttime="1612209462" endtime="1612211179"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.147.89" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 91:ba:0d:d4:39:05:e3:13:55:57:8f:1b:46:90:db:e4 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTlNTlvI4qQLNU17b70iKB5xuJlNnZ3zMZeHzfG3H5TcsVNmgImTe4FjEez0e4lKqJvTMsxrPVFHTq6gqfYHwN0KN34x0dv0ngrc+wrrWNoHQrQQqeFuTZy0Tt6BY97082YpFvZfDAvAwJoutkyCxeBb1+C9Y7g6kQYXlNFOuHoq/2m6vki9yVW7Bu3IVeLryw/7pnwzb/tr3K86GEsGc8+87ZIyFrgE1Rca/Y1hD03Uk0s/Kpmi3hCybJwPIoB1WmO2Xz2US8xqzuefsX6UzRazFTQKlTCq5gTTkpNE5fJzS/WmvK7w79aoFJPmVBCXOSXkoe9uoi9a64OnsY0jF8ao7uOUJp84QIUyPRLuPXqlxXwZenqt5RKH6dXyw9tsV2Q3BvZwJwvStFjiQFIi2zIp5jmVcYxwqV4CTt7Ev0ybATE00YAfCoS5i2LJR+fquN9XkS4ay3p9qoZZW7Q4uujWfUUaSO/gYLiOTpbTOl4Smgzc+NvqFrUk1OxPttDSc=&#xa;  256 0f:35:d1:a1:31:f2:f6:aa:75:e8:17:01:e7:1e:d1:d5 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOX6nl2HC2/Prh0l8uVsnAzinDT2+rhj1VasPM8Df3ntzgb8XzQat7zC/nHm0v7yLWo/CjpI6pD+mrBh3P/wuqk=&#xa;  256 af:f1:53:ea:7b:4d:d7:fa:d8:de:0d:f2:28:fc:86:d7 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBefJyPm1sjN+QedhTj6S1CPbXQZEFXb58RICJh970R8"><table>
+<elem key="fingerprint">91ba0dd43905e31355578f1b4690dbe4</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDTlNTlvI4qQLNU17b70iKB5xuJlNnZ3zMZeHzfG3H5TcsVNmgImTe4FjEez0e4lKqJvTMsxrPVFHTq6gqfYHwN0KN34x0dv0ngrc+wrrWNoHQrQQqeFuTZy0Tt6BY97082YpFvZfDAvAwJoutkyCxeBb1+C9Y7g6kQYXlNFOuHoq/2m6vki9yVW7Bu3IVeLryw/7pnwzb/tr3K86GEsGc8+87ZIyFrgE1Rca/Y1hD03Uk0s/Kpmi3hCybJwPIoB1WmO2Xz2US8xqzuefsX6UzRazFTQKlTCq5gTTkpNE5fJzS/WmvK7w79aoFJPmVBCXOSXkoe9uoi9a64OnsY0jF8ao7uOUJp84QIUyPRLuPXqlxXwZenqt5RKH6dXyw9tsV2Q3BvZwJwvStFjiQFIi2zIp5jmVcYxwqV4CTt7Ev0ybATE00YAfCoS5i2LJR+fquN9XkS4ay3p9qoZZW7Q4uujWfUUaSO/gYLiOTpbTOl4Smgzc+NvqFrUk1OxPttDSc=</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">0f35d1a131f2f6aa75e81701e71ed1d5</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOX6nl2HC2/Prh0l8uVsnAzinDT2+rhj1VasPM8Df3ntzgb8XzQat7zC/nHm0v7yLWo/CjpI6pD+mrBh3P/wuqk=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">aff153ea7b4dd7fad8de0df228fc86d7</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIBefJyPm1sjN+QedhTj6S1CPbXQZEFXb58RICJh970R8</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-generator" output="WordPress 5.4.2"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/secret.txt"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="OSCP Voucher &amp;#8211; Just another WordPress site"><elem key="title">OSCP Voucher &amp;#8211; Just another WordPress site</elem>
+</script></port>
+<port protocol="tcp" portid="33060"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="socks5" servicefp="SF-Port33060-TCP:V=7.91%I=9%D=2/2%Time=60186359%P=x86_64-pc-linux-gnu%r(NULL,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(GenericLines,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(GetRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(HTTPOptions,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(RTSPRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(RPCCheck,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(DNSVersionBindReqTCP,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(DNSStatusRequestTCP,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(Hello,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(Help,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(SSLSessionReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(TerminalServerCookie,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(TLSSessionReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(SSLv23SessionReq,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(Kerberos,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(SMBProgNeg,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(X11Probe,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(FourOhFourRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LPDString,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LDAPSearchReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(LDAPBindReq,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(SIPOptions,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LANDesk-RC,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(TerminalServer,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(NCP,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(NotesRPC,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(DistCCD,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(JavaRMI,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(Radmin,15D,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0P\x01\0\0\x02\n\x0f\n\x03tls\x12\x08\x08\x01\x12\x04\x08\x07@\0\nM\n\x19authentication\.mechanisms\x120\x08\x03\&quot;,\n\x11\x08\x01\x12\r\x08\x08J\t\n\x07MYSQL41\n\x17\x08\x01\x12\x13\x08\x08J\x0f\n\rSHA256_MEMORY\n\x1d\n\x0bdoc\.formats\x12\x0e\x08\x01\x12\n\x08\x08J\x06\n\x04text\n\x1e\n\x12client\.interactive\x12\x08\x08\x01\x12\x04\x08\x07@\0\nn\n\x0bcompression\x12_\x08\x02\x1a\[\nY\n\talgorithm\x12L\x08\x03\&quot;H\n\x18\x08\x01\x12\x14\x08\x08J\x10\n\x0edeflate_stream\n\x15\x08\x01\x12\x11\x08\x08J\r\n\x0blz4_message\n\x15\x08\x01\x12\x11\x08\x08J\r\n\x0bzstd_stream\n\x1c\n\tnode_type\x12\x0f\x08\x01\x12\x0b\x08\x08J\x07\n\x05mysql\n\x20\n\x14client\.pwd_expire_ok\x12\x08\x08\x01\x12\x04\x08\x07@\0&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, LDAPSearchReq, NotesRPC, SSLSessionReq, TLSSessionReq, X11Probe: &#xa;    Invalid message&quot;&#xa;    HY000&#xa;  Radmin: &#xa;    authentication.mechanisms&#xa;    MYSQL41&#xa;    SHA256_MEMORY&#xa;    doc.formats&#xa;    text&#xa;    client.interactive&#xa;    compression&#xa;    algorithm&#xa;    deflate_stream&#xa;    lz4_message&#xa;    zstd_stream&#xa;    node_type&#xa;    mysql&#xa;    client.pwd_expire_ok"><elem key="DNSStatusRequestTCP, LDAPSearchReq, NotesRPC, SSLSessionReq, TLSSessionReq, X11Probe">&#xa;    Invalid message&quot;&#xa;    HY000</elem>
+<elem key="Radmin">&#xa;    authentication.mechanisms&#xa;    MYSQL41&#xa;    SHA256_MEMORY&#xa;    doc.formats&#xa;    text&#xa;    client.interactive&#xa;    compression&#xa;    algorithm&#xa;    deflate_stream&#xa;    lz4_message&#xa;    zstd_stream&#xa;    node_type&#xa;    mysql&#xa;    client.pwd_expire_ok</elem>
+</script><script id="socks-auth-info" output="&#xa;  No authentication&#xa;  No authentication&#xa;  No authentication"><table>
+<elem key="name">No authentication</elem>
+<elem key="method">0</elem>
+</table>
+<table>
+<elem key="name">No authentication</elem>
+<elem key="method">0</elem>
+</table>
+<table>
+<elem key="name">No authentication</elem>
+<elem key="method">0</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="38025"/>
+<osmatch name="Linux 2.6.32" accuracy="91" line="54319">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.4" accuracy="91" line="65500">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.5" accuracy="91" line="65596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="91" line="67261">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Synology DiskStation Manager 5.1" accuracy="91" line="68527">
+<osclass type="storage-misc" vendor="Linux" osfamily="Linux" accuracy="91"><cpe>cpe:/o:linux:linux_kernel</cpe></osclass>
+<osclass type="storage-misc" vendor="Synology" osfamily="DiskStation Manager" osgen="5.X" accuracy="91"><cpe>cpe:/a:synology:diskstation_manager:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10" accuracy="90" line="63140">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="90" line="56843">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="90" line="67443">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="WatchGuard Fireware 11.8" accuracy="90" line="104852">
+<osclass type="firewall" vendor="WatchGuard" osfamily="Fireware" osgen="11.X" accuracy="90"><cpe>cpe:/o:watchguard:fireware:11.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1 - 3.2" accuracy="90" line="62959">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.91%E=4%D=2/2%OT=22%CT=1%CU=38025%PV=Y%DS=2%DC=T%G=N%TM=601863EB%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=108%GCD=1%ISR=108%TI=Z%II=I%TS=A)&#xa;SEQ(SP=109%GCD=1%ISR=107%TI=Z%TS=A)&#xa;OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)&#xa;WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)&#xa;ECN(R=Y%DF=Y%T=40%W=FAF0%O=M506NNSNW7%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=N)&#xa;T7(R=N)&#xa;U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2891215" lastboot="Wed Dec 30 15:19:24 2020"/>
+<distance value="2"/>
+<tcpsequence index="265" difficulty="Good luck!" values="E3CEC553,6AB6488B,5BB69014,2536B96,EB2CCE46,EDF268A9"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="AC542A50,AC542AB4,AC542C85,AC542CE9,AC542D4D,AC542E99"/>
+<trace port="1723" proto="tcp">
+<hop ttl="1" ipaddr="192.168.49.1" rtt="304.16"/>
+<hop ttl="2" ipaddr="192.168.147.89" rtt="304.42"/>
+</trace>
+<times srtt="289961" rttvar="28793" to="405133"/>
+</host>
+<taskbegin task="NSE" time="1612211179"/>
+<taskend task="NSE" time="1612211179"/>
+<taskbegin task="NSE" time="1612211179"/>
+<taskend task="NSE" time="1612211179"/>
+<taskbegin task="NSE" time="1612211179"/>
+<taskend task="NSE" time="1612211179"/>
+<runstats><finished time="1612211179" timestr="Tue Feb  2 02:26:19 2021" summary="Nmap done at Tue Feb  2 02:26:19 2021; 1 IP address (1 host up) scanned in 1717.27 seconds" elapsed="1717.27" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

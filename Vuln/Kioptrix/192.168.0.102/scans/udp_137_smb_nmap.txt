@@ -1,0 +1,28 @@
+# Nmap 7.91 scan initiated Sun Jan 31 02:19:42 2021 as: nmap -vv --reason -Pn -sU -sV -p 137 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" --script-args=unsafe=1 -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/udp_137_smb_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/udp_137_smb_nmap.xml 192.168.0.102
+Nmap scan report for 192.168.0.102
+Host is up, received arp-response (0.000061s latency).
+Scanned at 2021-01-31 02:19:42 +06 for 2s
+
+PORT    STATE SERVICE    REASON       VERSION
+137/udp open  netbios-ns udp-response Samba nmbd netbios-ns (workgroup: MYGROUP)
+MAC Address: 00:0C:29:50:D1:CA (VMware)
+Service Info: Host: KIOPTRIX
+
+Host script results:
+| nbstat: NetBIOS name: KIOPTRIX, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   KIOPTRIX<00>         Flags: <unique><active>
+|   KIOPTRIX<03>         Flags: <unique><active>
+|   KIOPTRIX<20>         Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   MYGROUP<00>          Flags: <group><active>
+|   MYGROUP<1d>          Flags: <unique><active>
+|   MYGROUP<1e>          Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 31 02:19:44 2021 -- 1 IP address (1 host up) scanned in 2.30 seconds

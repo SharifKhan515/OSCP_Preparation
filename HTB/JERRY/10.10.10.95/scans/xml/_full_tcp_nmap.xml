@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Feb 28 02:20:30 2021 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/xml/_full_tcp_nmap.xml 10.10.10.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/_full_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/xml/_full_tcp_nmap.xml 10.10.10.95" start="1614457230" startstr="Sun Feb 28 02:20:30 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1614457230"/>
+<taskend task="NSE" time="1614457230"/>
+<taskbegin task="NSE" time="1614457230"/>
+<taskend task="NSE" time="1614457230"/>
+<taskbegin task="NSE" time="1614457230"/>
+<taskend task="NSE" time="1614457230"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1614457230"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1614457230"/>
+<taskbegin task="SYN Stealth Scan" time="1614457230"/>
+<taskprogress task="SYN Stealth Scan" time="1614457261" percent="1.40" remaining="2180" etc="1614459441"/>
+<taskprogress task="SYN Stealth Scan" time="1614457291" percent="3.85" remaining="1526" etc="1614458816"/>
+<taskprogress task="SYN Stealth Scan" time="1614457321" percent="7.23" remaining="1168" etc="1614458489"/>
+<taskprogress task="SYN Stealth Scan" time="1614457351" percent="10.69" remaining="1012" etc="1614458362"/>
+<taskprogress task="SYN Stealth Scan" time="1614457381" percent="12.34" remaining="1073" etc="1614458453"/>
+<taskprogress task="SYN Stealth Scan" time="1614457477" percent="19.64" remaining="1011" etc="1614458488"/>
+<taskprogress task="SYN Stealth Scan" time="1614457507" percent="22.72" remaining="943" etc="1614458449"/>
+<taskprogress task="SYN Stealth Scan" time="1614457549" percent="26.80" remaining="872" etc="1614458420"/>
+<taskprogress task="SYN Stealth Scan" time="1614457579" percent="33.06" remaining="707" etc="1614458286"/>
+<taskprogress task="SYN Stealth Scan" time="1614457609" percent="39.08" remaining="591" etc="1614458200"/>
+<taskprogress task="SYN Stealth Scan" time="1614457657" percent="44.26" remaining="538" etc="1614458195"/>
+<taskprogress task="SYN Stealth Scan" time="1614457687" percent="50.17" remaining="454" etc="1614458141"/>
+<taskprogress task="SYN Stealth Scan" time="1614457774" percent="57.53" remaining="402" etc="1614458176"/>
+<taskprogress task="SYN Stealth Scan" time="1614457813" percent="62.21" remaining="355" etc="1614458167"/>
+<taskprogress task="SYN Stealth Scan" time="1614457846" percent="66.85" remaining="306" etc="1614458152"/>
+<taskprogress task="SYN Stealth Scan" time="1614457876" percent="72.20" remaining="249" etc="1614458125"/>
+<taskprogress task="SYN Stealth Scan" time="1614457915" percent="77.25" remaining="202" etc="1614458117"/>
+<taskprogress task="SYN Stealth Scan" time="1614457981" percent="82.73" remaining="157" etc="1614458138"/>
+<taskprogress task="SYN Stealth Scan" time="1614458023" percent="87.71" remaining="112" etc="1614458134"/>
+<taskprogress task="SYN Stealth Scan" time="1614458056" percent="92.25" remaining="70" etc="1614458125"/>
+<taskend task="SYN Stealth Scan" time="1614458113" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1614458113"/>
+<taskend task="Service scan" time="1614458120" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1614458126"/>
+<taskend task="Traceroute" time="1614458126"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1614458126"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1614458126"/>
+<taskbegin task="NSE" time="1614458126"/>
+<taskend task="NSE" time="1614458135"/>
+<taskbegin task="NSE" time="1614458135"/>
+<taskend task="NSE" time="1614458136"/>
+<taskbegin task="NSE" time="1614458136"/>
+<taskend task="NSE" time="1614458136"/>
+<host starttime="1614457230" endtime="1614458136"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service><script id="http-favicon" output="Apache Tomcat"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache-Coyote/1.1"><elem>Apache-Coyote/1.1</elem>
+</script><script id="http-title" output="Apache Tomcat/7.0.88"><elem key="title">Apache Tomcat/7.0.88</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8080"/>
+<osmatch name="Microsoft Windows Server 2012 or Windows Server 2012 R2" accuracy="91" line="75675">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 R2" accuracy="89" line="75713">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012" accuracy="88" line="75542">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2012</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="85" line="75116">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="85"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="85" line="76768">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="85" line="80045">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="85"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.91%E=4%D=2/28%OT=8080%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=603AAD18%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=FA%GCD=1%ISR=103%TI=I%II=I%TS=7)&#xa;SEQ(SP=FA%GCD=1%ISR=103%II=I%TS=7)&#xa;OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)&#xa;WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)&#xa;ECN(R=Y%DF=Y%TG=80%W=2000%O=M54DNW8NNS%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<uptime seconds="1089" lastboot="Sun Feb 28 02:17:27 2021"/>
+<distance value="2"/>
+<tcpsequence index="250" difficulty="Good luck!" values="C9614531,A1ED4FD8,75DC453C,6EFB9F75,4D86634B,2832571A"/>
+<ipidsequence class="Busy server or unknown class" values="7640,7642,7659,765A,765E,766F"/>
+<tcptssequence class="100HZ" values="1A49D,1A4A7,1A4B1,1A4BB,1A4C5,1A4CF"/>
+<trace port="8080" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="283.36"/>
+<hop ttl="2" ipaddr="10.10.10.95" rtt="283.43"/>
+</trace>
+<times srtt="284339" rttvar="1917" to="292007"/>
+</host>
+<taskbegin task="NSE" time="1614458136"/>
+<taskend task="NSE" time="1614458136"/>
+<taskbegin task="NSE" time="1614458136"/>
+<taskend task="NSE" time="1614458136"/>
+<taskbegin task="NSE" time="1614458136"/>
+<taskend task="NSE" time="1614458136"/>
+<runstats><finished time="1614458136" timestr="Sun Feb 28 02:35:36 2021" summary="Nmap done at Sun Feb 28 02:35:36 2021; 1 IP address (1 host up) scanned in 906.25 seconds" elapsed="906.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

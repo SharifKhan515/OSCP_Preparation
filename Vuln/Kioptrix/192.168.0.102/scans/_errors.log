@@ -1,0 +1,1 @@
+[*] Task tcp/443/wkhtmltoimage returned non-zero exit code: 1. Command: if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png https://192.168.0.102:443/ /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_443_https_screenshot.png; fi

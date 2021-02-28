@@ -1,0 +1,18 @@
+# Nmap 7.91 scan initiated Sun Jan 31 02:16:10 2021 as: nmap -vv --reason -Pn -sV -p 111 "--script=banner,(rpcinfo or nfs*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_111_nfs_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/tcp_111_nfs_nmap.xml 192.168.0.102
+Nmap scan report for 192.168.0.102
+Host is up, received arp-response (0.00026s latency).
+Scanned at 2021-01-31 02:16:10 +06 for 17s
+
+PORT    STATE SERVICE REASON         VERSION
+111/tcp open  rpcbind syn-ack ttl 64 2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100024  1           1024/tcp   status
+|_  100024  1           1024/udp   status
+MAC Address: 00:0C:29:50:D1:CA (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 31 02:16:27 2021 -- 1 IP address (1 host up) scanned in 16.68 seconds

@@ -1,0 +1,134 @@
+# Nmap 7.91 scan initiated Mon Feb  1 20:56:38 2021 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/khan/OSCP_Preparation/Vuln/DC_9/192.168.0.114/scans/tcp_80_http_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/DC_9/192.168.0.114/scans/xml/tcp_80_http_nmap.xml 192.168.0.114
+Nmap scan report for 192.168.0.114
+Host is up, received arp-response (0.000046s latency).
+Scanned at 2021-02-01 20:56:39 +06 for 17s
+
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 64 Apache httpd 2.4.38 ((Debian))
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.0.114
+|   url                                 method
+|_  http://192.168.0.114:80/manage.php  FORM
+|_http-chrono: Request times for /; avg: 216.22ms; min: 167.50ms; max: 263.80ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.0.114
+|     
+|     Path: http://192.168.0.114:80/css/style.css
+|     Line number: 63
+|     Comment: 
+|         
+|         
+|         	width: 600px;*/
+|     
+|     Path: http://192.168.0.114:80/css/style.css
+|     Line number: 96
+|     Comment: 
+|         /*float: right;*/
+|     
+|     Path: http://192.168.0.114:80/css/style.css
+|     Line number: 42
+|     Comment: 
+|_        /*line-height: 120px;*/
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.0.114
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.0.114:80/search.php
+|     Form id: 
+|     Form action: results.php
+|     
+|     Path: http://192.168.0.114:80/manage.php
+|     Form id: 
+|_    Form action: manage.php
+|_http-date: Sun, 31 Jan 2021 18:58:48 GMT; -19h58m02s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-errors: Couldn't find any error pages.
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (17) http://192.168.0.114:80/display.php: 
+|     (17) email: 
+|       + marym@example.com
+|       + julied@example.com
+|       + fredf@example.com
+|       + barneyr@example.com
+|       + tomc@example.com
+|       + jerrym@example.com
+|       + wilmaf@example.com
+|       + bettyr@example.com
+|       + chandlerb@example.com
+|       + joeyt@example.com
+|       + rachelg@example.com
+|       + rossg@example.com
+|       + monicag@example.com
+|       + phoebeb@example.com
+|       + scoots@example.com
+|       + janitor@example.com
+|_      + janitor2@example.com
+| http-headers: 
+|   Date: Sun, 31 Jan 2021 18:58:47 GMT
+|   Server: Apache/2.4.38 (Debian)
+|   Connection: close
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash bce1a9ae6ea72b75a7992325667d05c6
+|_Credits query returned unknown hash bce1a9ae6ea72b75a7992325667d05c6
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 5
+|     /css/
+|       css: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /css/
+|   Total files found (by extension):
+|_    Other: 1; css: 1; php: 5
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Example.com - Staff Details - Welcome
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+| 123 names had status 200
+| exchange
+| svn
+| oracle
+| ns2
+|_firewall
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+MAC Address: 00:0C:29:54:B0:E9 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb  1 20:56:56 2021 -- 1 IP address (1 host up) scanned in 17.59 seconds

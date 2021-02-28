@@ -1,0 +1,18 @@
+# Nmap 7.91 scan initiated Mon Feb  1 20:56:31 2021 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/khan/OSCP_Preparation/Vuln/DC_9/192.168.0.114/scans/_quick_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/DC_9/192.168.0.114/scans/xml/_quick_tcp_nmap.xml 192.168.0.114
+Nmap scan report for 192.168.0.114
+Host is up, received arp-response (0.0013s latency).
+Scanned at 2021-02-01 20:56:32 +06 for 6s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE    SERVICE REASON              VERSION
+22/tcp filtered ssh     port-unreach ttl 64
+80/tcp open     http    syn-ack ttl 64      Apache httpd 2.4.38 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Example.com - Staff Details - Welcome
+MAC Address: 00:0C:29:54:B0:E9 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb  1 20:56:38 2021 -- 1 IP address (1 host up) scanned in 6.97 seconds

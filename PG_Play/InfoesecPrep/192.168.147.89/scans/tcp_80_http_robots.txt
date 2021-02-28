@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Mon, 01 Feb 2021 19:58:46 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: Thu, 09 Jul 2020 06:49:19 GMT
+ETag: "24-5a9fc9fae6fe2"
+Accept-Ranges: bytes
+Content-Length: 36
+Content-Type: text/plain
+
+User-Agent: *
+Disallow: /secret.txt

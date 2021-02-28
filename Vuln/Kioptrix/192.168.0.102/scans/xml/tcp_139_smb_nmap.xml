@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Jan 31 02:16:11 2021 as: nmap -vv -&#45;reason -Pn -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_139_smb_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/tcp_139_smb_nmap.xml 192.168.0.102 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/tcp_139_smb_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/tcp_139_smb_nmap.xml 192.168.0.102" start="1612037771" startstr="Sun Jan 31 02:16:11 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="139"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1612037771"/>
+<taskend task="NSE" time="1612037771"/>
+<taskbegin task="NSE" time="1612037771"/>
+<taskend task="NSE" time="1612037771"/>
+<taskbegin task="NSE" time="1612037771"/>
+<taskend task="NSE" time="1612037771"/>
+<taskbegin task="ARP Ping Scan" time="1612037771"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1612037771" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1612037771"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1612037771"/>
+<taskbegin task="SYN Stealth Scan" time="1612037771"/>
+<taskend task="SYN Stealth Scan" time="1612037771" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1612037771"/>
+<taskend task="Service scan" time="1612037777" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1612037777"/>
+<taskprogress task="NSE" time="1612037808" percent="95.71" remaining="2" etc="1612037809"/>
+<taskprogress task="NSE" time="1612037838" percent="98.57" remaining="1" etc="1612037839"/>
+<taskend task="NSE" time="1612037845"/>
+<taskbegin task="NSE" time="1612037845"/>
+<taskend task="NSE" time="1612037845"/>
+<taskbegin task="NSE" time="1612037845"/>
+<taskend task="NSE" time="1612037845"/>
+<host starttime="1612037771" endtime="1612037845"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" extrainfo="workgroup: MYGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="nbstat" output="NetBIOS name: KIOPTRIX, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  KIOPTRIX&lt;00&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  KIOPTRIX&lt;03&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  KIOPTRIX&lt;20&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;00&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1d&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1e&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"/><script id="smb-mbenum" output="&#xa;  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]"/><script id="smb-print-text" output="false">false</script><script id="smb-protocols" output="No dialects accepted. Something may be blocking the responses"/><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]">false</script><script id="smb2-capabilities" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/></hostscript><times srtt="273" rttvar="3751" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1612037845"/>
+<taskend task="NSE" time="1612037845"/>
+<taskbegin task="NSE" time="1612037845"/>
+<taskend task="NSE" time="1612037845"/>
+<taskbegin task="NSE" time="1612037845"/>
+<taskend task="NSE" time="1612037845"/>
+<runstats><finished time="1612037845" timestr="Sun Jan 31 02:17:25 2021" summary="Nmap done at Sun Jan 31 02:17:25 2021; 1 IP address (1 host up) scanned in 74.47 seconds" elapsed="74.47" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

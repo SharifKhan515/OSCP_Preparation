@@ -1,0 +1,17 @@
+# Nmap 7.91 scan initiated Sun Feb 28 02:20:30 2021 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/_quick_tcp_nmap.txt -oX /home/khan/OSCP_Preparation/HTB/JERRY/10.10.10.95/scans/xml/_quick_tcp_nmap.xml 10.10.10.95
+Nmap scan report for 10.10.10.95
+Host is up, received user-set (0.33s latency).
+Scanned at 2021-02-28 02:20:30 +06 for 44s
+Not shown: 999 filtered ports
+Reason: 999 no-responses
+PORT     STATE SERVICE REASON          VERSION
+8080/tcp open  http    syn-ack ttl 127 Apache Tomcat/Coyote JSP engine 1.1
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/7.0.88
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 28 02:21:14 2021 -- 1 IP address (1 host up) scanned in 44.19 seconds

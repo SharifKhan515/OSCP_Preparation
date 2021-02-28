@@ -1,0 +1,44 @@
+# Nmap 7.91 scan initiated Tue Feb  2 01:57:42 2021 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/_top_20_udp_nmap.txt -oX /home/khan/OSCP_Preparation/PG_Play/InfoesecPrep/192.168.147.89/scans/xml/_top_20_udp_nmap.xml 192.168.147.89
+Nmap scan report for 192.168.147.89
+Host is up, received user-set (0.36s latency).
+Scanned at 2021-02-02 01:57:42 +06 for 24s
+
+PORT      STATE  SERVICE      REASON              VERSION
+53/udp    closed domain       port-unreach ttl 63
+67/udp    closed dhcps        port-unreach ttl 63
+68/udp    closed dhcpc        port-unreach ttl 63
+69/udp    closed tftp         port-unreach ttl 63
+123/udp   closed ntp          port-unreach ttl 63
+135/udp   closed msrpc        port-unreach ttl 63
+137/udp   closed netbios-ns   port-unreach ttl 63
+138/udp   closed netbios-dgm  port-unreach ttl 63
+139/udp   closed netbios-ssn  port-unreach ttl 63
+161/udp   closed snmp         port-unreach ttl 63
+162/udp   closed snmptrap     port-unreach ttl 63
+445/udp   closed microsoft-ds port-unreach ttl 63
+500/udp   closed isakmp       port-unreach ttl 63
+514/udp   closed syslog       port-unreach ttl 63
+520/udp   closed route        port-unreach ttl 63
+631/udp   closed ipp          port-unreach ttl 63
+1434/udp  closed ms-sql-m     port-unreach ttl 63
+1900/udp  closed upnp         port-unreach ttl 63
+4500/udp  closed nat-t-ike    port-unreach ttl 63
+49152/udp closed unknown      port-unreach ttl 63
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=2/2%OT=%CT=%CU=53%PV=Y%DS=2%DC=T%G=N%TM=60185D4E%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 631/udp)
+HOP RTT       ADDRESS
+1   362.12 ms 192.168.49.1
+2   362.23 ms 192.168.147.89
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb  2 01:58:06 2021 -- 1 IP address (1 host up) scanned in 23.84 seconds

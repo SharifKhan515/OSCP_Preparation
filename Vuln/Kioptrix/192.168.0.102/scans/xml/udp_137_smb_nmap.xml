@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Jan 31 02:19:42 2021 as: nmap -vv -&#45;reason -Pn -sU -sV -p 137 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/udp_137_smb_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/udp_137_smb_nmap.xml 192.168.0.102 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -sV -p 137 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/udp_137_smb_nmap.txt -oX /home/khan/OSCP_Preparation/Vuln/Kioptrix/192.168.0.102/scans/xml/udp_137_smb_nmap.xml 192.168.0.102" start="1612037982" startstr="Sun Jan 31 02:19:42 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="137"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1612037982"/>
+<taskend task="NSE" time="1612037982"/>
+<taskbegin task="NSE" time="1612037982"/>
+<taskend task="NSE" time="1612037982"/>
+<taskbegin task="NSE" time="1612037982"/>
+<taskend task="NSE" time="1612037982"/>
+<taskbegin task="ARP Ping Scan" time="1612037982"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1612037982" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1612037983"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1612037983"/>
+<taskbegin task="UDP Scan" time="1612037983"/>
+<taskend task="UDP Scan" time="1612037984" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1612037984"/>
+<taskend task="Service scan" time="1612037984" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<host starttime="1612037982" endtime="1612037984"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<address addr="00:0C:29:50:D1:CA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="0"/><service name="netbios-ns" product="Samba nmbd netbios-ns" extrainfo="workgroup: MYGROUP" hostname="KIOPTRIX" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<hostscript><script id="nbstat" output="NetBIOS name: KIOPTRIX, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  KIOPTRIX&lt;00&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  KIOPTRIX&lt;03&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  KIOPTRIX&lt;20&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;00&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1d&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1e&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"/></hostscript><times srtt="61" rttvar="5000" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<taskbegin task="NSE" time="1612037984"/>
+<taskend task="NSE" time="1612037984"/>
+<runstats><finished time="1612037984" timestr="Sun Jan 31 02:19:44 2021" summary="Nmap done at Sun Jan 31 02:19:44 2021; 1 IP address (1 host up) scanned in 2.30 seconds" elapsed="2.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
